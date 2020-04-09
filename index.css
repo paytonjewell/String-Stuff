@@ -1,0 +1,16 @@
+.label {
+    font-weight: bold;
+    display: block;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 1em;
+}
+
+table tr:nth-of-type(even) td {
+    background-color: rgba(0, 0, 0, 0.2);
+}
