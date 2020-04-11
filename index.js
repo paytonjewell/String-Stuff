@@ -20,7 +20,13 @@ const getLower = (name) => name.toLowerCase();
 
 const getUpper = (name) => name.toUpperCase();
 
-const getCapitalized = (name) => name[0].toUpperCase() + name.substring(1).toLowerCase();
+const getCapitalized = (name) => { 
+    return name
+    .toLowerCase()
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+};
 
 const getClean = (name) => name.trim();
 
